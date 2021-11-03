@@ -1,0 +1,207 @@
+.formss {
+  position: absolute;
+  display: block;
+  left: 40;
+  top: 40;
+  width: 370px;
+  @media screen and (min-width: $desctorp) {
+    width: 448px;
+  }
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+}
+.modal-forms {
+  margin-bottom: 20px;
+  position: relative;
+  transition: 250ms $timing-function;
+  & label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-12px);
+  }
+  & input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 3px;
+    transition: 250ms $timing-function;
+    &:hover {
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+      outline: $accent-color;
+    }
+    &:focus {
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+      outline: $accent-color;
+    }
+    &:hover .modal-forms__img {
+      fill: $accent-color;
+      transition: 250ms $timing-function;
+    }
+    &:focus .modal-forms__img {
+      fill: $accent-color;
+      transition: 250ms $timing-function;
+    }
+    &:focus ~ .modal-forms__img {
+      fill: $accent-color;
+      transition: 250ms $timing-function;
+    }
+    &:focus + .modal-forms__label {
+      color: #2196f3;
+      transition: 250ms var(--timing-function);
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    top: 50%;
+    fill: black;
+    transform: translateY(-50%);
+    transition: 250ms $timing-function;
+    &:current {
+      fill: $accent-color;
+    }
+  }
+}
+.modal-forms {
+  margin-bottom: 20px;
+  position: relative;
+  transition: 250ms $timing-function;
+  & textarea {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 3px;
+    transition: 250ms $timing-function;
+    width: 100%;
+    resize: none;
+    &:hover {
+      border: 1px solid $accent-color;
+      outline: $accent-color;
+    }
+    &:focus {
+      border: 1px solid $accent-color;
+      outline: $accent-color;
+    }
+    & label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #757575;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-12px);
+    }
+    &:focus + .modal-forms__label {
+      color: #2196f3;
+      transition: 250ms var(--timing-function);
+    }
+  }
+}
+.group {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  & input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
+  &__label {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    @media screen and (min-width: $desctorp) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  &__checkbox {
+    opacity: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -appearance: none;
+    -ms-appearance: none;
+  }
+  &__checkbox {
+    &:checked + .group__icon {
+      border-color: #2196f3;
+      background-color: #2196f3;
+      background-image: url("../img/svg/icon_check.svg");
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  &__text {
+    color: $accent-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.botton_style {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 20px;
+  background-color: $accent-color;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,187 @@
+.selection-team {
+  background-color: #f5f4fa;
+  &__heading {
+    font-family: Roboto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    @media screen and (min-width: $mobile) {
+      font-family: Roboto;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      color: black;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $desctorp) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      color: black;
+      margin-bottom: 50px;
+    }
+  }
+  &__list {
+    //     display: flex;
+    //     flex-direction: row;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    @media screen and (max-width: 767px) {
+      margin-left: 0px;
+      padding-left: 0px;
+      margin-right: 0px;
+      width: 100%;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: $desctorp) {
+      margin: -15px;
+    }
+  }
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+    width: 450px;
+    height: 622px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+    &:not(:first-child) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    @media screen and (max-width: 767px) {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+      &:not(:first-child) {
+        margin-bottom: 30px;
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      width: 45%;
+      &:first-child {
+        margin: 15px;
+        width: calc(100% - 4 * 15px) / 2;
+      }
+      &:not(:first-child) {
+        margin: 15px;
+        width: calc(100% - 4 * 15px) / 2;
+      }
+      &:last-child {
+        margin: 15px;
+        width: calc(100% - 4 * 15px) / 2;
+      }
+    }
+    @media screen and (min-width: $desctorp) {
+      width: 22%;
+      &:first-child {
+        margin: 15px;
+        width: calc(100% - 8 * 15px) / 4;
+      }
+      &:not(:first-child) {
+        margin: 15px;
+        width: calc(100% - 8 * 15px) / 4;
+      }
+      &:last-child {
+        margin: 15px;
+        width: calc(100% - 8 * 15px) / 4;
+      }
+    }
+  }
+}
+.business_card {
+  padding: 30px 59px;
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  &__position {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #757575;
+    margin-left: 0px;
+    margin-bottom: 16px;
+  }
+  &__list {
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+    justify-content: center;
+  }
+  &__item {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    &:first-child {
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+    &:not(:first-child) {
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    fill: #afb1b8;
+    transition: 250ms $timing-function;
+    &:hover {
+      background-color: $accent-color;
+      fill: #ffffff;
+    }
+    &:focus {
+      background-color: $accent-color;
+      fill: #ffffff;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

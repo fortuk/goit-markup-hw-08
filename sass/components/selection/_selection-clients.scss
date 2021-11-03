@@ -1,0 +1,208 @@
+.selection-clients {
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+  }
+}
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+.client {
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: #afb1b8;
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
+    &--location {
+      display: flex;
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 210px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      fill: #afb1b8;
+      &:hover,
+      &:focus {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+      }
+      &--location {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 226px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      fill: #afb1b8;
+      &:hover,
+      &:focus {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+      }
+      &--location {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+    @media screen and (min-width: $desctorp) {
+      width: 170px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 170px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      fill: #afb1b8;
+      &:hover,
+      &:focus {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+      }
+      &--location {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+  }
+  &__item {
+    &:nth-child(1) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+    &:nth-child(4) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(5) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+    &:nth-child(6) {
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: $mobile) {
+      &:nth-child(1) {
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0px;
+        margin-right: 30px;
+      }
+      &:nth-child(6) {
+        margin-bottom: 0px;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      &:nth-child(1) {
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+        margin-right: 30px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 30px;
+        margin-right: 0px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 0px;
+        margin-right: 30px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0px;
+        margin-right: 30px;
+      }
+      &:nth-child(6) {
+        margin-bottom: 0px;
+      }
+    }
+    @media screen and (min-width: $desctorp) {
+      &:nth-child(1) {
+        margin-bottom: 00px;
+        margin-right: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 00px;
+        margin-right: 30px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 0px;
+        margin-right: 30px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 0px;
+        margin-right: 30px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0px;
+        margin-right: 30px;
+      }
+      &:nth-child(6) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

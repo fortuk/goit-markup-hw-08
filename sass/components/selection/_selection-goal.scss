@@ -1,0 +1,177 @@
+.goal {
+  width: 360px;
+  @media screen and (min-width: $mobile) {
+    width: 360px;
+  }
+  @media screen and (min-width: $desctorp) {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.selection-goal {
+  display: block;
+  width: 480px;
+  background-color: #2f303a;
+  text-align: center;
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/sass/img/1/Header_img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 118px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+    height: 400px;
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/sass/img/1/Header_img1.jpg");
+    background-size: 480px 400px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2ddpi) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/sass/img/1/Header-img1_2x.jpg");
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (-webkit-min-device-pixel-ratio: 23),
+      screen and (-o-min-device-pixel-ratio: 3/1),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3ddpi) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/sass/img/1/Header-img1_3x.jpg");
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/sass/img/2/Header_img2.jpg");
+    background-size: 768px 400px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2ddpi) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/sass/img/2/Header_img2@2x.jpg");
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (-webkit-min-device-pixel-ratio: 23),
+      screen and (-o-min-device-pixel-ratio: 3/1),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3ddpi) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/sass/img/2/Header_img2@3x.jpg");
+    }
+  }
+  @media screen and (min-width: $desctorp) {
+    width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/sass/img/3/Img1.jpg");
+    background-size: 1600px 600px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2ddpi) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/sass/img/3/Img3@2x.jpg");
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (-webkit-min-device-pixel-ratio: 23),
+      screen and (-o-min-device-pixel-ratio: 3/1),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3ddpi) {
+      background-image: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/sass/img/3/Img2@3x.jpg");
+    }
+  }
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @media screen and (min-width: $mobile) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 42px;
+      color: #fff;
+    }
+    @media screen and (min-width: $desctorp) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 60px;
+      color: #fff;
+    }
+  }
+}
+.button_style {
+  padding: 10px 32px;
+  background-color: $accent-color;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
