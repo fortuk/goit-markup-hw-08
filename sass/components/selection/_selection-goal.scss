@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/1/Header_img1.jpg");
+      url("./img/1/Header_img1.jpg");
     background-size: 480px 400px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -46,7 +46,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../selection/img/1/Header-img1_2x.jpg");
+        url("./img/1/Header-img1_2x.jpg");
     }
     @media screen and (min-device-pixel-ratio: 3),
       screen and (-webkit-min-device-pixel-ratio: 23),
@@ -58,7 +58,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../selection/img/1/Header-img1_3x.jpg");
+        url("./img/1/Header-img1_3x.jpg");
     }
   }
   @media screen and (min-width: $tablet) {
@@ -69,7 +69,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../selection/img/2/Header_img2.jpg");
+      url("./img/2/Header_img2.jpg");
     background-size: 768px 400px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -81,7 +81,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../selection/img/2/Header_img2@2x.jpg");
+        url("./img/2/Header_img2@2x.jpg");
     }
     @media screen and (min-device-pixel-ratio: 3),
       screen and (-webkit-min-device-pixel-ratio: 23),
@@ -93,7 +93,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../selection/img/2/Header_img2@3x.jpg");
+        url("./img/2/Header_img2@3x.jpg");
     }
   }
   @media screen and (min-width: $desctorp) {
@@ -105,7 +105,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../selection/img/3/Img1.jpg");
+      url("./img/3/Img1.jpg");
     background-size: 1600px 600px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -117,7 +117,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../selection/img/3/Img3@2x.jpg");
+        url("./img/3/Img3@2x.jpg");
     }
     @media screen and (min-device-pixel-ratio: 3),
       screen and (-webkit-min-device-pixel-ratio: 23),
@@ -129,7 +129,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../selection/img/3/Img2@3x.jpg");
+        url("./img/3/Img2@3x.jpg");
     }
   }
   &__text {
