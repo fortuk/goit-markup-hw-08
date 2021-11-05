@@ -21,6 +21,9 @@
     width: 106px;
     height: 60px;
   }
+  &__icon-logo {
+    text-align: start;
+  }
   &__link {
     display: flex;
     align-items: flex-end;

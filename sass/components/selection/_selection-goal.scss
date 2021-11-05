@@ -1,5 +1,5 @@
 .goal {
-  width: 360px;
+  width: 100%;
   @media screen and (min-width: $mobile) {
     width: 360px;
   }
@@ -11,8 +11,8 @@
 }
 .selection-goal {
   display: block;
-
-  background-color: #2f303a;
+  width: 100%;
+  background-color: hsl(235, 10%, 21%);
   text-align: center;
   background-image: linear-gradient(
       to left,
@@ -139,6 +139,7 @@
     font-size: 26px;
     line-height: 42px;
     color: #fff;
+    width: 100%;
     text-transform: uppercase;
     margin-bottom: 30px;
     @media screen and (min-width: $mobile) {

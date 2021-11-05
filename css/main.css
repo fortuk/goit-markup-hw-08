@@ -41,7 +41,7 @@ ul {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 0px;
 }
@@ -348,8 +348,8 @@ img {
 
 .novigation__menus:hover {
   fill: #2196f3;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .novigation__menus:focus {
@@ -392,8 +392,6 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767.5px) {
@@ -407,11 +405,11 @@ img {
     left: 0;
     width: 100%;
     z-index: 2;
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu-conteiner.is-open {
     display: block;
+    -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -792,7 +790,7 @@ img {
 }
 
 .goal {
-  width: 360px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -811,7 +809,8 @@ img {
 
 .selection-goal {
   display: block;
-  background-color: #2f303a;
+  width: 100%;
+  background-color: #30313b;
   text-align: center;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/1.jpg");
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/1.jpg");
@@ -903,6 +902,7 @@ img {
   font-size: 26px;
   line-height: 42px;
   color: #fff;
+  width: 100%;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -1517,6 +1517,10 @@ img {
 .client__icon {
   width: 106px;
   height: 60px;
+}
+
+.client__icon-logo {
+  text-align: start;
 }
 
 .client__link {
@@ -2278,7 +2282,7 @@ img {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin: 20px;
+  margin: 10px;
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -2733,7 +2737,6 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin: -4px;
   width: 100%;
   margin-bottom: 46px;
 }
