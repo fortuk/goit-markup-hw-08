@@ -9,7 +9,9 @@
         
         MenuBtnRef.classList.toggle("is-open");
         MenuBtnRef.setAttribute("aria-expanded", !expanded);
-
-        mabileMenuRef.classList.toggle("is-open");
+      
+      document.body.classList.toggle("menu-open")
+      mabileMenuRef.classList.toggle("is-open");
+      
   });
 })();
